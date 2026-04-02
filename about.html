@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Haven Bookstore | About & Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo-wrap">
+        <img src="static/Client3_LogoPalette1_2E4057.png" alt="Book Haven Bookstore logo" class="logo" />
+        <span class="brand">Book Haven Bookstore</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html" class="active">About/Contact</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container about-grid">
+      <section>
+        <h1>About Book Haven</h1>
+        <p>
+          Book Haven Bookstore is a local treasure for book enthusiasts, offering a diverse selection
+          of books, magazines, journals, and office supplies. Our goal is to create an inviting online
+          space that reflects our love of reading and literary discovery.
+        </p>
+        <p>
+          We serve avid readers, students, and anyone searching for high-quality reading materials
+          and office essentials.
+        </p>
+
+        <div class="hours-box">
+          <h2>Hours of Operation</h2>
+          <ul>
+            <li>Monday–Friday: 9 a.m. to 8 p.m.</li>
+            <li>Saturday: 10 a.m. to 6 p.m.</li>
+            <li>Sunday: 11 a.m. to 5 p.m.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact-box">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Ask about a title, product, or store visit"></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Book Haven Bookstore</h3>
+        <p>Your welcoming destination for books, magazines, journals, and more.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: hello@bookhaven.com<br />Phone: (555) 123-4567</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
