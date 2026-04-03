@@ -32,11 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector(".site-nav");
   
     if (menuButton && nav) {
-      menuButton.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
-        menuButton.setAttribute("aria-expanded", String(!isExpanded));
-      });
+        menuButton.addEventListener("click", () => {
+            nav.classList.toggle("open");
+            menuButton.classList.toggle("open"); // 👈 ADD THIS
+          
+            const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+            menuButton.setAttribute("aria-expanded", String(!isExpanded));
+          });
     }
   
     // -----------------------------
@@ -475,4 +477,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // -----------------------------
     renderProducts();
     renderCart();
+
+
+
   });
