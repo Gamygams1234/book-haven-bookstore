@@ -55,15 +55,15 @@
 
       <section class="contact-box">
         <h2>Contact Us</h2>
-        <form>
+        <form id="contactForm">
           <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Enter your name" />
+          <input id="name" required name="name" type="text" placeholder="Enter your name" />
 
           <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="Enter your email" />
+          <input id="email" required name="email" type="email" placeholder="Enter your email" />
 
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Ask about a title, product, or store visit"></textarea>
+          <textarea id="message" required name="message" rows="5" placeholder="Ask about a title, product, or store visit"></textarea>
 
           <button type="submit" class="btn">Send Message</button>
         </form>

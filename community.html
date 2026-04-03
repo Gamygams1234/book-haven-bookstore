@@ -56,11 +56,23 @@
       <section class="newsletter-box">
         <h2>Stay Connected</h2>
         <p>Sign up to hear about future events, reading recommendations, and store updates.</p>
-        <form class="newsletter-form">
-          <label for="newsletter-email" class="sr-only">Email address</label>
-          <input id="newsletter-email" type="email" placeholder="Enter your email" />
-          <button type="submit" class="btn">Subscribe</button>
-        </form>
+      
+        <div id="newsletterContainer">
+          <form id="communityNewsletterForm" novalidate>
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input
+              id="newsletter-email"
+              type="text"
+              placeholder="Enter your email"
+            />
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+      
+          <!-- Hidden success message -->
+          <p id="newsletterSuccess" class="newsletter-success hidden">
+            Thank you! We’ll keep in touch.
+          </p>
+        </div>
       </section>
     </div>
   </main>
@@ -69,11 +81,11 @@
     <div class="container footer-grid">
       <div>
         <h3>Book Haven Bookstore</h3>
-        <p>Creating a welcoming place for literary discovery and intellectual growth.</p>
+        <p>Celebrating the written word and supporting intellectual growth.</p>
       </div>
       <div>
-        <h3>Community</h3>
-        <p>Book clubs, reading events, and local learning experiences.</p>
+        <h3>Hours</h3>
+        <p>Mon–Fri: 9 a.m. to 8 p.m.<br />Sat: 10 a.m. to 6 p.m.<br />Sun: 11 a.m. to 5 p.m.</p>
       </div>
     </div>
   </footer>
