@@ -722,3 +722,7 @@ body.modal-open {
 #cartItems .cart-quantity-controls {
     display: none;
   }
+
+  .logo {
+    filter: brightness(0) invert(1);
+  }
