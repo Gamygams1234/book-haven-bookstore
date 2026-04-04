@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
     function clearCartStorage() {
+        alert("Your Cart is now empty.")
       sessionStorage.removeItem(CART_KEY);
     }
   
