@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Helpers
     // -----------------------------
     const CART_KEY = "cart";
-    const CUSTOM_ORDER_KEY = "customOrders";
+    const CONTACT_STORAGE_KEY = "contactSubmissions";
   
     function showMessage(message) {
       alert(message);
@@ -457,16 +457,16 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
   
-        const customOrderEntry = {
+        const contactEntry = {
           name,
           email,
           message,
           submittedAt: new Date().toISOString()
         };
   
-        const existingOrders = JSON.parse(localStorage.getItem(CUSTOM_ORDER_KEY)) || [];
-        existingOrders.push(customOrderEntry);
-        localStorage.setItem(CUSTOM_ORDER_KEY, JSON.stringify(existingOrders));
+        const existingContacts = JSON.parse(localStorage.getItem(CONTACT_STORAGE_KEY)) || [];
+        existingContacts.push(contactEntry);
+        localStorage.setItem(CONTACT_STORAGE_KEY, JSON.stringify(existingContacts));
   
         showMessage("Thank you for your message.");
         contactForm.reset();
